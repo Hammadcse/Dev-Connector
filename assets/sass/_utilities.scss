@@ -24,7 +24,18 @@
 .text-primary{
     color: $primary;
 }
-// Background
+.round-img {
+	border-radius: 50%;
+	width: 215px;
+	height: 215px;
+	object-fit: cover;
+}
+.line{
+    height: 1px;
+    margin: 1.5rem 0;
+    background:#ccc;
+}
+// Backgrounds
 .bg{
     &-primary{
         @include set-background($primary);
@@ -105,6 +116,27 @@
         @include set-background($success);
     }
     &.alert-danger{
+        @include set-background($danger);
+    }
+}
+// Badge
+.badge{
+    font-size: 0.8rem;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    text-align: center;
+    background-color: $light;
+    color: #333;
+    &.badge-primary{
+        @include set-background($primary);
+    }
+    &.badge-dark{
+        @include set-background($dark);
+    }
+    &.badge-light{
+    @include set-background($light);
+    }
+    &.badge-danger{
         @include set-background($danger);
     }
 }
