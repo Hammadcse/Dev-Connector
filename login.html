@@ -21,8 +21,12 @@
             <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
+        <label id="nav-toggler">
+            <i class="fas fa-bars"></i>
+        </label>
     </nav>
     <section class="container">
+        <a href="index.html" class="btn"><i class="fas fa-home fa-2x"></i></a>
         <div class="alert alert-danger">
             Invalid Credential
         </div>
@@ -39,5 +43,15 @@
         </form>
         <p class="my-1">Don't have any account?<a href="register.html">Sign up</a></p>
     </section>
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav-toggler').click(function(){
+                    $('ul').toggleClass('show');
+                });
+            });
+        </script>
 </body>
 </html>

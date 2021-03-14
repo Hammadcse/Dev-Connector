@@ -395,6 +395,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+}
+
+.navbar #nav-toggler {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .navbar a {
@@ -544,5 +553,122 @@ img {
           flex: 3;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+}
+
+.post-form-heading {
+  padding: 0.5rem;
+}
+
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.post img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+}
+
+.post > div:first-child {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 8rem;
+  }
+  .hide-sm {
+    display: none;
+  }
+  .fa-home {
+    font-size: 1.5rem;
+  }
+  .x-large {
+    font-size: 3rem;
+  }
+  .large {
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar #nav-toggler {
+    opacity: 1;
+  }
+  .navbar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    margin-left: 0;
+    position: fixed;
+    top: 4rem;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    background: black;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    padding-top: 3rem;
+  }
+  .navbar ul.show {
+    left: 0% !important;
+  }
+  .dash-buttons a {
+    margin-bottom: 0.6rem;
+  }
+  .table-wrapper {
+    width: 100%;
+    overflow: scroll;
+  }
+  .profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .profile-wrapper {
+        grid-template-areas: 'top' 'about' 'exp' 'edu' 'github';
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profile-wrapper .profile-about .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 377px) {
+  .cm-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 329px) {
+  .round-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 310px) {
+  .navbar ul {
+    top: 6.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

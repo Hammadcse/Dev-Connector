@@ -18,6 +18,9 @@
             <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Login</a></li>
         </ul>
+        <label id="nav-toggler">
+            <i class="fas fa-bars"></i>
+        </label>
     </nav>
     <section class="landing">
         <div class="dark-overlay">
@@ -26,10 +29,20 @@
                 <p class="lead">Create develper Profile/Portpolio,Share post and get help from other developers</p>
                 <div class="buttons">
                     <a href="register.html" class="btn btn-primary">Sign Up</a>
-                    <a href="ogin.html" class="btn">Login</a>
+                    <a href="login.html" class="btn">Login</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav-toggler').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

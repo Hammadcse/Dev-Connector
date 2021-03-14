@@ -41,6 +41,14 @@ img{
     padding: 0.7rem 2rem;
     ul{
         display: flex;
+        margin-left:auto;
+    }
+    & #nav-toggler{
+        font-size: 1.5rem;
+        line-height: 1.2;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0;
     }
     a{
         color: #fff;
@@ -141,3 +149,24 @@ img{
         }
     }
 }
+// Posts page
+.post-form-heading{
+    padding: 0.5rem;
+}
+.post{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+    img{
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ccc;
+    }
+    & > div:first-child{
+        text-align: center;
+    }
+}
+@import 'mobile';
+
